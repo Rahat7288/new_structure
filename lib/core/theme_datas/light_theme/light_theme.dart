@@ -66,7 +66,11 @@ class LightTheme extends AppTheme {
   @override
   ThemeData get themeData => ThemeData(
     useMaterial3: true,
-    scaffoldBackgroundColor: colors.primary,
+    scaffoldBackgroundColor: colors.background,
+    appBarTheme: AppBarTheme(
+      backgroundColor: colors.primary,
+      foregroundColor: colors.background,
+    ),
     filledButtonTheme: filledButtonThemeData,
     floatingActionButtonTheme: floatingActionButtonThemeData,
     iconButtonTheme: iconButtonThemeData,
