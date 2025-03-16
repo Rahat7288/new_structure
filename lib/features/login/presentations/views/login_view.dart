@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_structure/core/theme_datas/theme_cubit.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -17,13 +18,45 @@ class LoginView extends StatelessWidget {
 
             SizedBox(
               width: double.maxFinite,
-                child: FilledButton(onPressed: (){}, child: Text('Primary Button'),
+                child: FilledButton(onPressed: (){}, child: Text('Continue'),
                 ),
+
             ),
+
+            const SizedBox(
+              height: 20,
+            ),
+
+            TextField(
+              decoration: InputDecoration(
+                label: Text('Email'),
+                hintText: 'Enter your email',
+              ),
+            ),
+            
+            const SizedBox(
+              height: 20,
+            ),
+            
+            Center(
+              child: Text(
+                'hello new Dev',
+                style: context.textTheme.headlineLarge,
+              ),
+            ),
+
+            // FloatingActionButton(
+            //   onPressed:
+            // (){}, child: Icon(Icons.add),
+            // )
 
           ],
         ),
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Icon(Icons.add),
+      ),
     );
   }
 }

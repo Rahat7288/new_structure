@@ -38,6 +38,12 @@ class LightTheme extends AppTheme {
   InputDecorationTheme get inputDecorationTheme => InputDecorationTheme(
     labelStyle: TextStyles.titleSmall,
     hintStyle: TextStyles.bodyMedium,
+    focusedBorder: UnderlineInputBorder(
+      borderSide: BorderSide(
+        color: BrandColors.borderColorGray100,
+      )
+    )
+
   );
 
   @override
