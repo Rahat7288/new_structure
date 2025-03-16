@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
   flutter_bloc: ^9.1.0
+  dio: ^5.8.0+1
+  shared_preferences: ^2.5.2
+  pretty_dio_logger: ^1.4.0
 
 dev_dependencies:
   flutter_test:
