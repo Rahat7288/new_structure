@@ -27,11 +27,13 @@ class TextStyles {
 
   static TextStyle titleMedium = titleLarge.copyWith(
     fontSize: 14,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w700,
     color: BrandColors.textColorShade000,
   );
   static TextStyle titleSmall = titleMedium.copyWith(
-  color: BrandColors.textColorShadeC67,);
+    fontWeight: FontWeight.w500,
+    color: BrandColors.textColorShadeC67,
+  );
 // body text styles ===================
 
   static TextStyle bodyLarge = titleMedium.copyWith(

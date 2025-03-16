@@ -5,11 +5,6 @@ abstract class AppColors{
   Color get background;
   Color get surface;
   Color get error;
-  Color get onPrimary;
-  Color get onSecondary;
-  Color get onBackground;
-  Color get onSurface;
-  Color get onError;
 //  Text color for light theme
   Color get titleText;
   Color get titleText2;

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'colors/app_colors.dart';
+
 abstract class AppTheme {
-  // AppColors get colors;
+  AppColors get colors;
   TextTheme get textTheme;
   ThemeData get themeData;
   FilledButtonThemeData get filledButtonThemeData;

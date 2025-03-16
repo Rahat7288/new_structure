@@ -22,5 +22,6 @@ static const Color textColorShadeGry700 = Color(0xff616161);
 static const Color textColorShadeC67 = Color(0xff525C67);
 static const Color textColorShade383 = Color(0xff838383);
 static const Color textColorShade69D = Color(0xff90969D);
-
+// others colors ====================
+static const Color errorColor = Color(0xffE23512);
 }
