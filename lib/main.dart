@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:new_structure/core/theme_datas/app_theme.dart';
-import 'package:new_structure/core/theme_datas/light_theme/light_theme.dart';
-
 import 'core/services/bloc_provider_services/bloc_provider_services.dart';
-import 'core/theme_datas/theme_cubit.dart';
+import 'core/theme_data/app_theme.dart';
+import 'core/theme_data/theme_cubit.dart';
 import 'features/login/presentations/views/login_view.dart';
 
 void main() {

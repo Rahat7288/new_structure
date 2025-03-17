@@ -1,6 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../theme_datas/theme_cubit.dart';
+import '../../theme_data/theme_cubit.dart';
 
 class BlocProviderServices {
   static List<BlocProvider> providers(){

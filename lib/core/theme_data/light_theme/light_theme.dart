@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:new_structure/core/theme_datas/colors/app_colors.dart';
-import 'package:new_structure/core/theme_datas/colors/colors.dart';
-import 'package:new_structure/core/theme_datas/text_style_guide/text_styles.dart';
-
 import '../app_theme.dart';
+import '../colors/app_colors.dart';
+import '../colors/colors.dart';
+import '../text_style_guide/text_styles.dart';
 
 class LightTheme extends AppTheme {
   @override
@@ -73,17 +72,34 @@ class LightTheme extends AppTheme {
   ThemeData get themeData => ThemeData(
     useMaterial3: true,
     scaffoldBackgroundColor: colors.background,
+    // shadowColor: colors.,
     appBarTheme: AppBarTheme(
       backgroundColor: colors.primary,
       foregroundColor: colors.background,
     ),
+
     filledButtonTheme: filledButtonThemeData,
     floatingActionButtonTheme: floatingActionButtonThemeData,
     iconButtonTheme: iconButtonThemeData,
     inputDecorationTheme: inputDecorationTheme,
     textButtonTheme: textButtonThemeData,
+    tabBarTheme:tabBarThemeData,
     textTheme: textTheme,
 
+  );
+
+  @override
+  TabBarThemeData get tabBarThemeData => TabBarThemeData(
+    labelPadding: EdgeInsets.symmetric(horizontal: 10),
+    labelColor: colors.background,
+    unselectedLabelColor: colors.titleText2,
+
+    indicator: BoxDecoration(
+      color: colors.primary,
+     borderRadius: BorderRadius.circular(100),
+      shape: BoxShape.rectangle,
+    ),
+    //   indicatorColor: colors.primary,
   );
 
 }

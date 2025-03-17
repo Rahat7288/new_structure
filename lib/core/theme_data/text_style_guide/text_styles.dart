@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:new_structure/core/theme_datas/colors/app_colors.dart';
-import 'package:new_structure/core/theme_datas/colors/colors.dart';
+import '../colors/colors.dart';
 
 class TextStyles {
   // header text styles ===================

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_structure/core/theme_datas/theme_cubit.dart';
-
+import 'package:new_structure/core/theme_data/theme_cubit.dart';
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
 
@@ -12,45 +11,81 @@ class LoginView extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 17),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-
-            SizedBox(
-              width: double.maxFinite,
-                child: FilledButton(onPressed: (){}, child: Text('Continue'),
+        child: DefaultTabController(
+          length: 3,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+          
+              SizedBox(
+                width: double.maxFinite,
+                  child: FilledButton(onPressed: (){}, child: Text('Continue'),
+                  ),
+          
+              ),
+          
+              const SizedBox(
+                height: 20,
+              ),
+          
+              TextField(
+                decoration: InputDecoration(
+                  label: Text('Email'),
+                  hintText: 'Enter your email',
                 ),
-
-            ),
-
-            const SizedBox(
-              height: 20,
-            ),
-
-            TextField(
-              decoration: InputDecoration(
-                label: Text('Email'),
-                hintText: 'Enter your email',
               ),
-            ),
-            
-            const SizedBox(
-              height: 20,
-            ),
-            
-            Center(
-              child: Text(
-                'hello new Dev',
-                style: context.textTheme.headlineLarge,
+              
+              const SizedBox(
+                height: 20,
               ),
-            ),
+              
+              Center(
+                child: Text(
+                  'hello new Dev',
+                  style: context.textTheme.headlineLarge,
+                ),
+              ),
+          
+              // FloatingActionButton(
+              //   onPressed:
+              // (){}, child: Icon(Icons.add),
+              // )
 
-            // FloatingActionButton(
-            //   onPressed:
-            // (){}, child: Icon(Icons.add),
-            // )
-
-          ],
+              SizedBox(
+                width: double.maxFinite,
+                child: TabBar(
+                  isScrollable: true,
+                  tabs: [
+                    Tab(
+                     child: Container(
+                       padding: EdgeInsets.symmetric(horizontal: 10),
+                         child: Center(
+                             child: Text('Tab 1'),
+                         ),
+                     ),
+                    ),
+                    Tab(
+                      child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        child: Center(
+                          child: Text('Tab Tab 1'),
+                        ),
+                      ),
+                    ),
+                    Tab(
+                      child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        child: Center(
+                          child: Text('Tab Tab Tab1'),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )
+          
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(

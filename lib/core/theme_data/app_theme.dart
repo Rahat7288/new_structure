@@ -11,4 +11,5 @@ abstract class AppTheme {
   IconButtonThemeData get iconButtonThemeData;
   FloatingActionButtonThemeData get floatingActionButtonThemeData;
   InputDecorationTheme get inputDecorationTheme;
+  TabBarThemeData get tabBarThemeData;
 }
