@@ -5,6 +5,7 @@ abstract class AppColors{
   Color get background;
   Color get surface;
   Color get error;
+  Color get shadowColor;
 //  Text color for light theme
   Color get titleText;
   Color get titleText2;

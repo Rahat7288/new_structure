@@ -72,7 +72,7 @@ class LightTheme extends AppTheme {
   ThemeData get themeData => ThemeData(
     useMaterial3: true,
     scaffoldBackgroundColor: colors.background,
-    // shadowColor: colors.,
+    shadowColor: colors.shadowColor,
     appBarTheme: AppBarTheme(
       backgroundColor: colors.primary,
       foregroundColor: colors.background,
@@ -102,27 +102,31 @@ class LightTheme extends AppTheme {
     //   indicatorColor: colors.primary,
   );
 
+  @override
+  // TODO: implement switchThemeData
+  SwitchThemeData get switchThemeData => SwitchThemeData(
+    thumbColor: WidgetStateProperty.all(colors.primary),
+    trackColor: WidgetStateProperty.all(colors.primary),
+    overlayColor: WidgetStateProperty.all(colors.primary),
+    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+  );
+
 }
 
 class LightThemeColor extends AppColors{
   @override
-
   Color get background => BrandColors.backgroundColor;
 
   @override
-
   Color get bodyTextLarge => BrandColors.primary;
 
   @override
-
   Color get bodyTextLight => BrandColors.textColorShade000;
 
   @override
-
   Color get bodyTitle => BrandColors.textColorShade000;
 
   @override
-
   Color get error => BrandColors.errorColor;
 
   @override
@@ -142,5 +146,8 @@ class LightThemeColor extends AppColors{
 
   @override
   Color get titleTextLight => BrandColors.textColorShade383;
+
+  @override
+  Color get shadowColor => BrandColors.shadowColor;
 
 }
